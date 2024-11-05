@@ -1,0 +1,117 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://www.tendencias.kpmg.es/wp-content/uploads/2018/11/GettyImages-912949110.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* White text for better contrast */
+    margin-bottom: 25px;
+}
+
+/* Container Styles */
+.container {
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+    backdrop-filter: blur(10px); /* Background blur for a modern look */
+}
+
+/* Different colors for each container */
+#login {
+    background: rgba(15, 14, 14, 0.85); /* Dark overlay */
+}
+
+#register {
+    background: rgba(100, 149, 237, 0.85); /* Light Blue with transparency */
+}
+
+#dashboard {
+    background: rgba(144, 238, 144, 0.85); /* Light Green with transparency */
+}
+
+#shopping {
+    background: rgba(255, 165, 0, 0.85); /* Light Orange with transparency */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #4A90E2; /* Highlight border on focus */
+}
+
+/* Buttons */
+button {
+    width: 95%;
+    background-color: #615f5f;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #4A90E2; /* Blue on hover */
+    transform: scale(1.05);
+}
+
+/* Additional Styles */
+#scannedProductsList {
+    margin-top: 20px;
+}
+
+#camera-view-container {
+    width: 100%;
+    height: 400px; /* Set height as needed */
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#paymentOptions {
+    display: none;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#paymentOptions h3 {
+    margin-bottom: 15px;
+}
